@@ -35,10 +35,7 @@ jobs:
           cat << EOF > ./dist/CNAME
           mittkreditkort.info
           EOF
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
