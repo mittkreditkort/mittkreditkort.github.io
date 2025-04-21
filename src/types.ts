@@ -5,4 +5,5 @@ export type CreditCardType = {
   interestRate: number;
   benefits: string[];
   imageUrl: string;
+  imageBgColor?: string;
 };

@@ -1,4 +1,4 @@
-import { CreditCardType } from "../types";
+import { CreditCardType } from "../../types";
 
 const creditCards: CreditCardType[] = [
   {
@@ -11,8 +11,7 @@ const creditCards: CreditCardType[] = [
       "Reseförsäkring",
       "Ingen valutaväxlingsavgift",
     ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/SAS_EuroBonus.png",
   },
   {
     name: "ICA Banken Kort Plus",
@@ -20,8 +19,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 195,
     interestRate: 14.95,
     benefits: ["Bonus på ICA-butiker", "Reseförsäkring", "Prisgaranti"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1580508174046-170816f65662?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Ica_Banken.png",
   },
   {
     name: "Remember Kreditkort",
@@ -29,8 +27,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 0,
     interestRate: 15.9,
     benefits: ["Ingen årsavgift", "Cashback på alla köp", "Mobilförsäkring"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Re_Member_flex.jpg",
   },
   {
     name: "Swedbank Mastercard",
@@ -38,8 +35,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 195,
     interestRate: 15.95,
     benefits: ["Reseförsäkring", "Avbeställningsskydd", "Förmånliga räntor"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1589758438368-0ad531db3366?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Swedbank.png",
   },
   {
     name: "Handelsbanken Allkort",
@@ -47,8 +43,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 295,
     interestRate: 15.25,
     benefits: ["Reseförsäkring", "Avbeställningsskydd", "Rabatt på drivmedel"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1574672280600-4ac79c4d4c95?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Handelsbanken.png",
   },
   {
     name: "Nordea Credit",
@@ -56,8 +51,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 195,
     interestRate: 16.9,
     benefits: ["Reseförsäkring", "Internetköpsskydd", "Concierge-service"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1577132922436-d9d9a28b6b9f?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Nordea.png",
   },
   {
     name: "Länsförsäkringar Mastercard",
@@ -65,8 +59,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 195,
     interestRate: 15.45,
     benefits: ["Reseförsäkring", "Prisgaranti", "ID-stöldskydd"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Lansforsakringar.png",
   },
   {
     name: "FOREX Mastercard",
@@ -78,8 +71,8 @@ const creditCards: CreditCardType[] = [
       "Reseförsäkring",
       "Rabatt på valutaväxling",
     ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1602776229765-d8c8d45aafa0?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Forex.png",
+    imageBgColor: "bg-[#FFCF03]",
   },
   {
     name: "Marginalen Bank Mastercard",
@@ -87,8 +80,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 195,
     interestRate: 16.9,
     benefits: ["Reseförsäkring", "Avbeställningsskydd", "ID-stöldskydd"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1559067096-49ebca3406aa?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Marginalen_Bank.png",
   },
   {
     name: "Coop Mastercard",
@@ -96,8 +88,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 295,
     interestRate: 14.95,
     benefits: ["Poäng på alla köp", "Extra poäng hos Coop", "Reseförsäkring"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Coop.png",
   },
   {
     name: "Norwegian Kreditkort",
@@ -109,8 +100,8 @@ const creditCards: CreditCardType[] = [
       "Extra CashPoints på Norwegian-flyg",
       "Ingen årsavgift",
     ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1540339832862-46d6a605b15f?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Bank_Norwegian.png",
+    imageBgColor: "bg-[#E8F2F9]",
   },
   {
     name: "Resurs Bank Mastercard",
@@ -118,8 +109,7 @@ const creditCards: CreditCardType[] = [
     annualFee: 195,
     interestRate: 17.95,
     benefits: ["Reseförsäkring", "Köpskydd", "Delbetalning utan ränta"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1585914641050-fa9883c4e21c?auto=format&fit=crop&w=300",
+    imageUrl: "/logos/Resurs_Bank.png",
   },
 ];
 

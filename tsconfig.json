@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "types": ["astro/client"]
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

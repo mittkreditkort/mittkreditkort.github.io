@@ -7,10 +7,10 @@ import {
   Shield,
 } from "lucide-react";
 import { useState } from "react";
+import { CreditCardType } from "../types";
 import creditCards from "./data/swedish-credit-cards";
-import { CreditCardType } from "./types";
 
-function App() {
+const App = () => {
   const [sortBy, setSortBy] = useState<keyof CreditCardType>("annualFee");
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -35,7 +35,7 @@ function App() {
             <div className="flex items-center">
               <CreditCard className="h-8 w-8 text-blue-600" />
               <h1 className="ml-3 text-2xl font-bold text-gray-900">
-                Kreditkort Jämförelse
+                Jämförelse av Kreditkort
               </h1>
             </div>
             <div className="relative">
@@ -45,8 +45,11 @@ function App() {
                 placeholder="Sök kreditkort..."
                 className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => {
+                  setSearchTerm(e.target.value);
+                }}
               />
+              {searchTerm}
             </div>
           </div>
         </div>
@@ -75,11 +78,11 @@ function App() {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="h-48 overflow-hidden">
+              <div className={`h-48 overflow-hidden p-6 ${card.imageBgColor}`}>
                 <img
                   src={card.imageUrl}
                   alt={card.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-scale-down"
                 />
               </div>
               <div className="p-6">
@@ -135,6 +138,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
